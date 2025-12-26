@@ -9,6 +9,10 @@ const bookSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    image: {
+      type: String,
+      required: true,
+    },
     rating: {
         type: Number,
         required: true,
@@ -23,5 +27,6 @@ const bookSchema = new mongoose.Schema({
 }, {timestamps: true})
 
 const Book = mongoose.model("Book", bookSchema)
+
 
 export default Book
